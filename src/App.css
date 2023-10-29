@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Saira+Condensed:wght@200;300&display=swap');
+
+:root{
+  --header-font: 'Bebas Neue', sans-serif;
+  --text-font: 'Saira Condensed', sans-serif;
+}
+
+h1,h2,h3{
+  font-family: var(--header-font);
+}
+
+body{
+  font-family: var(--text-font);
+}
+p{
+  font-weight: 400;
+}
