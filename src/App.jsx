@@ -3,8 +3,12 @@ import Navbar from './Components/Navbar/Navbar'
 import Banner from './Components/Banner/Banner'
 import Features from './Components/Features/Features'
 import Row from './Components/Row/Row'
+import Ad from './Components/Ad/Ad'
 
-import Icecreambanner from './assets/ice-banner.jpg';
+import banner from './assets/main-banner.jpg';
+import Favorites from './Components/Favorites/Favorites'
+import Cta from './Components/CTA/Cta'
+import Footer from './Components/Footer/Footer'
 
 function App() {
 
@@ -13,7 +17,11 @@ function App() {
       <Navbar/>
       <Banner/>
       <Features/>
-      <Row Image={Icecreambanner}  text="dummy text"/>
+      <Ad/>
+      <Row Image={banner}/>
+      <Favorites/>
+      <Cta/>
+      <Footer/>
     </>
   )
 }
