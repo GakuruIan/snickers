@@ -1,27 +1,50 @@
 import './App.css'
+import { createBrowserRouter,RouterProvider,Outlet} from "react-router-dom";
 import Navbar from './Components/Navbar/Navbar'
-import Banner from './Components/Banner/Banner'
-import Features from './Components/Features/Features'
-import Row from './Components/Row/Row'
-import Ad from './Components/Ad/Ad'
+import Product from './Components/Product/Product';
+import Home from './Components/Home/Home';
+import About from './Components/About/About';
+import Contact from './Components/Contact/Contact';
 
-import banner from './assets/main-banner.jpg';
-import Favorites from './Components/Favorites/Favorites'
-import Cta from './Components/CTA/Cta'
-import Footer from './Components/Footer/Footer'
+const Layout = ()=>{
+  return (
+    <>
+      <Navbar/>
+      <Outlet/>
+    </>
+  )
+}
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path:'/',
+        element:<Home/>
+      },
+      {
+        path: "/product",
+        element: <Product/>,
+      },
+      {
+        path:"/about",
+        element:<About/>
+      },
+      {
+        path:"/contact",
+        element:<Contact/>
+      }
+    ],
+  },
+]);
 
 function App() {
 
   return (
     <>
-      <Navbar/>
-      <Banner/>
-      <Features/>
-      <Ad/>
-      <Row Image={banner}/>
-      <Favorites/>
-      <Cta/>
-      <Footer/>
+      <RouterProvider router={router} />
     </>
   )
 }

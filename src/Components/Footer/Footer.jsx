@@ -3,7 +3,7 @@ import logo from '../../assets/logo.png'
 
 const Footer = () => {
   return (
-    <div className='mt-6'>
+    <div className=''>
       <div className="bg-[#E5AC49] h-full md:h-24 py-4">
          <div className="max-w-6xl h-full mx-auto flex md:items-center flex-col md:flex-row gap-y-4 md:gap-4 md:px-0 px-4">
                  <img src={logo} alt="" className='h-auto w-44 object-fit'/>

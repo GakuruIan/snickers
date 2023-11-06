@@ -8,9 +8,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between w-full max-w-6xl mx-auto px-4 md:px-2">
             <h1 className="text-3xl text-white">Snickers</h1>
              <div className="flex items-center gap-4 hidden md:block">
-                <a href="" className='text-xl hover:text-gray-300 hover:cursor-pointer text-white mx-6'>Home</a>
-                <a href="" className='text-xl hover:text-gray-300 hover:cursor-pointer text-white mx-6'>About</a>
-                <a href="" className='text-xl hover:text-gray-300 hover:cursor-pointer text-white mx-6'>Contact Us</a>
+                <a href="/" className='text-xl hover:text-gray-300 hover:cursor-pointer text-white mx-6'>Home</a>
+                <a href="/about" className='text-xl hover:text-gray-300 hover:cursor-pointer text-white mx-6'>About</a>
+                <a href="/contact" className='text-xl hover:text-gray-300 hover:cursor-pointer text-white mx-6'>Contact Us</a>
                 <a href="" className='text-xl hover:text-gray-300 hover:cursor-pointer text-white mx-6'>Our Products</a>
              </div>
             <div className="flex items-center gap-4">
