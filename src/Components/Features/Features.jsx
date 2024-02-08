@@ -1,7 +1,7 @@
 import React,{useRef} from 'react'
 import {motion} from 'framer-motion'
 
-import Icecream from '../../assets/icecream.png'
+import Icecream from '../../assets/Icecream.png'
 import Icebar from '../../assets/ice-bar.png'
 import Icecream5 from '../../assets/ice-cream5.png'
 import Icecream6 from '../../assets/ice-cream6.png'
