@@ -7,7 +7,7 @@ import { AiOutlineSend } from "react-icons/ai";
 const Contact = () => {
   return (
     <div className="h-[calc(100vh-128px)] w-full flex items-center justify-center">
-       <div className="w-96">
+       <div className="w-96 px-2 md:px-0">
              <h1 className="text-2xl md:text-5xl text-[#410C00] mb-6">Contact us</h1>
              <div class="mb-6">
                 <label for="base-input" className="block mb-2 text-base font-medium text-gray-900">Fullname</label>
